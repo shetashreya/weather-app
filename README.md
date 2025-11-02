@@ -1,33 +1,22 @@
-# Weather App - Tech Assessment 1 & 2 (FULLY COMPLETED)
+# Weather App - Tech Assessment 1 & 2 
 
 This project is a full-stack Weather App that fulfills the assessment requirements:
+
+<img width="1308" height="1038" alt="Screenshot 2025-11-02 124002" src="https://github.com/user-attachments/assets/bfab37d2-8a89-49de-8f94-269e59c30588" />
+<img width="1879" height="1035" alt="Screenshot 2025-11-02 124027" src="https://github.com/user-attachments/assets/7e6f62eb-11ff-4f64-a513-4e0da58dfb24" />
 
 - Tech 1: Current + 5-day forecast, flexible location input, geolocation, OpenWeatherMap icons.
 - Tech 2: File-based CRUD stored in `data/weather_records.json`, client + server validation, exports (JSON/CSV/PDF), Unsplash background integration.
 
-Setup (Replit / Glitch / Local)
-
-1. Copy the project files into your workspace.
-2. Replace the placeholder API key in `server.js`:
-
-```js
-const WEATHER_API_KEY = 'YOUR_OPENWEATHERMAP_API_KEY_HERE';
-```
-
-3. Install dependencies and run:
+Install dependencies and run:
 
 ```powershell
-# in Windows PowerShell
 npm install
 npm run dev
 ```
 
 This runs the server (port 5000) and the client dev server concurrently.
 
-Notes
-- No external database is used. Data persists in `data/weather_records.json` and survives restarts.
-- Export buttons download JSON, CSV, or PDF.
-- Background image is loaded from Unsplash using the searched city (no API key required).
 
 Demo flow
 
@@ -36,4 +25,4 @@ Demo flow
 3. Edit or delete records. Export the dataset.
 
 Footer
-Weather App by [Your Name Here]
+Weather App by shreya
