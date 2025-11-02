@@ -1,0 +1,302 @@
+[
+  {
+    "id": "926b7af0-e09f-4509-94da-87b981a72161",
+    "locationInput": "seoul",
+    "resolvedCity": "Seoul",
+    "country": "South Korea",
+    "lat": 37.57,
+    "lon": 127,
+    "dateRange": {
+      "start": "2025-11-01",
+      "end": "2025-11-03"
+    },
+    "currentWeather": {
+      "temp": 13.4,
+      "feels_like": 12.1,
+      "humidity": 72,
+      "wind_speed": 4.305555555555555,
+      "weather": [
+        {
+          "main": "Clear",
+          "description": "Clear",
+          "icon": "113"
+        }
+      ],
+      "pressure": 1013
+    },
+    "forecast": [
+      {
+        "dt": 1761955200,
+        "temp": {
+          "min": 10.9,
+          "max": 16
+        },
+        "weather": [
+          {
+            "main": "Patchy rain nearby",
+            "description": "Patchy rain nearby",
+            "icon": "176"
+          }
+        ]
+      },
+      {
+        "dt": 1762041600,
+        "temp": {
+          "min": 6,
+          "max": 14.5
+        },
+        "weather": [
+          {
+            "main": "Sunny",
+            "description": "Sunny",
+            "icon": "113"
+          }
+        ]
+      },
+      {
+        "dt": 1762128000,
+        "temp": {
+          "min": 5.7,
+          "max": 16.7
+        },
+        "weather": [
+          {
+            "main": "Sunny",
+            "description": "Sunny",
+            "icon": "113"
+          }
+        ]
+      },
+      {
+        "dt": 1762214400,
+        "temp": {
+          "min": 9.9,
+          "max": 17.8
+        },
+        "weather": [
+          {
+            "main": "Sunny",
+            "description": "Sunny",
+            "icon": "113"
+          }
+        ]
+      },
+      {
+        "dt": 1762300800,
+        "temp": {
+          "min": 11.2,
+          "max": 18.3
+        },
+        "weather": [
+          {
+            "main": "Cloudy ",
+            "description": "Cloudy ",
+            "icon": "119"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-11-01T12:03:02.354Z",
+    "updatedAt": "2025-11-01T12:07:15.116Z"
+  },
+  {
+    "id": "0e40d262-d257-4d5a-b5f9-b27735ef3f2f",
+    "locationInput": "London",
+    "resolvedCity": "London",
+    "country": "United Kingdom",
+    "lat": 51.52,
+    "lon": -0.11,
+    "dateRange": {
+      "start": "2025-11-01",
+      "end": "2025-11-01"
+    },
+    "currentWeather": {
+      "temp": 14.1,
+      "feels_like": 12.4,
+      "humidity": 72,
+      "wind_speed": 6.305555555555555,
+      "weather": [
+        {
+          "main": "Partly cloudy",
+          "description": "Partly cloudy",
+          "icon": "116"
+        }
+      ],
+      "pressure": 1001
+    },
+    "forecast": [
+      {
+        "dt": 1761955200,
+        "temp": {
+          "min": 9,
+          "max": 13.9
+        },
+        "weather": [
+          {
+            "main": "Moderate rain",
+            "description": "Moderate rain",
+            "icon": "302"
+          }
+        ]
+      },
+      {
+        "dt": 1762041600,
+        "temp": {
+          "min": 9.2,
+          "max": 12.7
+        },
+        "weather": [
+          {
+            "main": "Patchy rain nearby",
+            "description": "Patchy rain nearby",
+            "icon": "176"
+          }
+        ]
+      },
+      {
+        "dt": 1762128000,
+        "temp": {
+          "min": 10.5,
+          "max": 14.6
+        },
+        "weather": [
+          {
+            "main": "Patchy rain nearby",
+            "description": "Patchy rain nearby",
+            "icon": "176"
+          }
+        ]
+      },
+      {
+        "dt": 1762214400,
+        "temp": {
+          "min": 13.4,
+          "max": 15.4
+        },
+        "weather": [
+          {
+            "main": "Patchy rain nearby",
+            "description": "Patchy rain nearby",
+            "icon": "176"
+          }
+        ]
+      },
+      {
+        "dt": 1762300800,
+        "temp": {
+          "min": 13.7,
+          "max": 15.1
+        },
+        "weather": [
+          {
+            "main": "Patchy rain nearby",
+            "description": "Patchy rain nearby",
+            "icon": "176"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-11-01T11:16:21.107Z",
+    "updatedAt": "2025-11-01T11:16:21.107Z"
+  },
+  {
+    "id": "5c68de30-3061-4263-8b79-45b2ec370dd3",
+    "locationInput": "Surat",
+    "resolvedCity": "Surat",
+    "country": "India",
+    "lat": 20.97,
+    "lon": 72.9,
+    "dateRange": {
+      "start": "2025-11-01",
+      "end": "2025-11-01"
+    },
+    "currentWeather": {
+      "temp": 26.7,
+      "feels_like": 29.9,
+      "humidity": 81,
+      "wind_speed": 4,
+      "weather": [
+        {
+          "main": "Light rain shower",
+          "description": "Light rain shower",
+          "icon": "353"
+        }
+      ],
+      "pressure": 1008
+    },
+    "forecast": [
+      {
+        "dt": 1761955200,
+        "temp": {
+          "min": 24.3,
+          "max": 29.1
+        },
+        "weather": [
+          {
+            "main": "Moderate rain",
+            "description": "Moderate rain",
+            "icon": "302"
+          }
+        ]
+      },
+      {
+        "dt": 1762041600,
+        "temp": {
+          "min": 23.3,
+          "max": 27.8
+        },
+        "weather": [
+          {
+            "main": "Heavy rain",
+            "description": "Heavy rain",
+            "icon": "308"
+          }
+        ]
+      },
+      {
+        "dt": 1762128000,
+        "temp": {
+          "min": 24.6,
+          "max": 27.7
+        },
+        "weather": [
+          {
+            "main": "Patchy rain nearby",
+            "description": "Patchy rain nearby",
+            "icon": "176"
+          }
+        ]
+      },
+      {
+        "dt": 1762214400,
+        "temp": {
+          "min": 24.9,
+          "max": 28.2
+        },
+        "weather": [
+          {
+            "main": "Patchy rain nearby",
+            "description": "Patchy rain nearby",
+            "icon": "176"
+          }
+        ]
+      },
+      {
+        "dt": 1762300800,
+        "temp": {
+          "min": 24.7,
+          "max": 27.9
+        },
+        "weather": [
+          {
+            "main": "Patchy rain nearby",
+            "description": "Patchy rain nearby",
+            "icon": "176"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-11-01T11:10:11.328Z",
+    "updatedAt": "2025-11-01T11:10:11.328Z"
+  }
+]
