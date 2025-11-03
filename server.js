@@ -214,6 +214,11 @@ app.get('/api/records', async (req, res) => {
   }
 });
 
+// Health check
+app.get('/api/ping', (req, res) => {
+  res.json({ ok: true, uptime: process.uptime() });
+});
+
 // Update record
 app.put('/api/records/:id', async (req, res) => {
   const id = req.params.id;

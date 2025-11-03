@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: weather-app
+    env: node
+    plan: free
+    buildCommand: "npm --prefix client install && npm --prefix client run build"
+    startCommand: "npm start"
+    envVars:
+      - key: WEATHER_API_KEY
+        value: "${WEATHER_API_KEY}"
+        from: secret
+    healthCheckPath: "/api/ping"
+    region: oregon
