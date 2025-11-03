@@ -344,16 +344,38 @@ app.get('/api/exports/pdf', async (req, res) => {
 app.use(express.static(path.join(__dirname, 'client', 'dist')));
 
 // Fallback — serve index.html for any non-API route (enables client-side routing)
-app.get('*', (req, res, next) => {
+app.get('*', async (req, res, next) => {
   // don't override API routes
   if (req.path.startsWith('/api')) return next();
   const indexPath = path.join(__dirname, 'client', 'dist', 'index.html');
-  res.sendFile(indexPath, err => {
-    if (err) {
-      // index.html not present — likely client not built yet
-      res.status(404).send('Not found');
-    }
-  });
+  try {
+    await fs.access(indexPath);
+    // file exists — serve it
+    res.sendFile(indexPath);
+  } catch (err) {
+    // index.html not present — likely client not built yet on the host
+    console.error('client/dist/index.html not found on server:', indexPath);
+    // return a helpful HTML page so the user sees instructions instead of generic 404
+    res.status(200).send(`
+      <html>
+        <head><title>Client Not Built</title></head>
+        <body style="font-family:Arial,Segoe UI,sans-serif;padding:30px;color:#111;background:#f7f9fc">
+          <h2>Client build not found</h2>
+          <p>The server could not find <code>client/dist/index.html</code>. This usually means the client build step didn't run during deployment.</p>
+          <h3>How to fix</h3>
+          <ol>
+            <li>Ensure your Render (or host) build command runs: <code>npm --prefix client run build</code></li>
+            <li>Ensure the start command is: <code>npm start</code> (or runs <code>node server.js</code>)</li>
+            <li>Check deployment/build logs — look for Vite build output and "dist" creation.</li>
+          </ol>
+          <p>To build locally and test, run:</p>
+          <pre>npm --prefix client run build
+npm start</pre>
+          <p>Once <code>client/dist/index.html</code> exists, reload this page.</p>
+        </body>
+      </html>
+    `);
+  }
 });
 
 app.listen(PORT, () => {
