@@ -343,6 +343,19 @@ app.get('/api/exports/pdf', async (req, res) => {
 // Serve static client in production (optional)
 app.use(express.static(path.join(__dirname, 'client', 'dist')));
 
+// Fallback — serve index.html for any non-API route (enables client-side routing)
+app.get('*', (req, res, next) => {
+  // don't override API routes
+  if (req.path.startsWith('/api')) return next();
+  const indexPath = path.join(__dirname, 'client', 'dist', 'index.html');
+  res.sendFile(indexPath, err => {
+    if (err) {
+      // index.html not present — likely client not built yet
+      res.status(404).send('Not found');
+    }
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
   if (WEATHER_API_KEY === 'YOUR_OPENWEATHERMAP_API_KEY_HERE') {
